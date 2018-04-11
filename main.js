@@ -113,4 +113,4 @@ new CronJob('*/15 * * * *', function() {
     spam.send(`${random}`)
 }, null, true, 'Europe/Warsaw');
 
-client.login(config.settings.token);
+client.login(process.env.TOKEN);
