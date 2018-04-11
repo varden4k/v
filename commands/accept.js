@@ -35,7 +35,7 @@ let accept = {};
             }
           });
 
-          logi.message.send('Dołączył do nas ' + message.author.username + ' :wporzo:');
+          logi.send('Dołączył do nas ' + message.author.username + ' :wporzo:');
 
         } catch (e) {
             message.channel.send("error!");
