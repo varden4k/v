@@ -106,11 +106,4 @@ client.on('message', async message => {
 		}
 });
 
-new CronJob('*/15 * * * *', function() {
-	let spam = client.channels.find("id", `430722672440377346`)
-    var wiadomosc = [`Lem0n jest zajebisty!`, `Co tam czarnuszku?`, `to ja lem0n`, `moge inva?`, `igor`, `budowa`]
-    var random = wiadomosc[Math.floor(Math.random()*wiadomosc.length)]
-    spam.send(`${random}`)
-}, null, true, 'Europe/Warsaw');
-
 client.login(process.env.TOKEN);
