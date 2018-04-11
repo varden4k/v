@@ -2,6 +2,8 @@ const discord = require('discord.js');
 const config = require('../config.js');
 const client = new discord.Client();
 
+const logi = config.settings.logi;
+
 let accept = {};
 
     accept.acccept = (message, client) => {
@@ -33,7 +35,7 @@ let accept = {};
             }
           });
 
-          config.settings.logi.message.send('Dołączył do nas ' + message.author.username + ' :wporzo:');
+          logi.message.send('Dołączył do nas ' + message.author.username + ' :wporzo:');
 
         } catch (e) {
             message.channel.send("error!");
