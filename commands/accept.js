@@ -33,6 +33,8 @@ let accept = {};
             }
           });
 
+          config.settings.logi.message.send('Dołączył do nas ' + message.author.username + ' :wporzo:');
+
         } catch (e) {
             message.channel.send("error!");
         } finally {
