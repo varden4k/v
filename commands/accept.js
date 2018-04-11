@@ -2,8 +2,6 @@ const discord = require('discord.js');
 const config = require('../config.js');
 const client = new discord.Client();
 
-const logi = config.settings.logi;
-
 let accept = {};
 
     accept.acccept = (message, client) => {
@@ -34,8 +32,9 @@ let accept = {};
               ]
             }
           });
-
-          logi.send('Dołączył do nas ' + message.author.username + ' :wporzo:');
+          const emojiWporzo = message.guild.emojis.find('name', 'wporzo');
+          const logi = client.channels.find("id", '433669387677990928')
+          logi.send(`@here Dołączył do nas <@${message.author.id}> ${emojiWporzo}`);
 
         } catch (e) {
             message.channel.send("error!");
