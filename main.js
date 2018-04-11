@@ -65,16 +65,11 @@ client.on('message', async message => {
 		}
 
 				break;
-			case 'pliszka':
-			var wiadomosc = [`to jebana kurwa`, `szmata jebana`, `nie pierdolcie o tej kurwie bo mi sie niedobrze robi`, `jebana suka pierdolona`, `chuj jej w kurwe dziwce`, `to pierdolona szmata`, `to zajebana dziwka`, `nienawidze tej kurwy`]
-			var random = wiadomosc[Math.floor(Math.random()*wiadomosc.length)]
-			message.channel.send(`${random}`)
-				break;
 			case 'kruszon':
 				message.channel.send('kruszon daj pakiet');
 				break;
 			case 'sewraino':
-				message.channel.send('to jebany kurwa snitch pierdolony');
+				message.channel.send('to snitch');
 				break;
 			case 'rozumiem':
 				accept.acccept(message, client);
