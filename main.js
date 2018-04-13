@@ -65,9 +65,6 @@ client.on('message', async message => {
 		}
 
 				break;
-			case 'colinas':
-				message.channel.send('pewnie ze kurwa las colinas');
-				break;
 			case 'kruszon':
 				message.channel.send('kruszon daj pakiet');
 				break;
