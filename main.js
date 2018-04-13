@@ -11,7 +11,7 @@ var CronJob = require('cron').CronJob;
 const prefix = '/';
 
 client.on('ready', () => {
-	client.user.setActivity(config.settings.game);
+	    client.user.setActivity('głosu boga', {type: 'LISTENING'});
 	client.user.setUsername("Lem0n");
 	client.user.setAvatar('https://images.vice.com/vice/images/galleries/meta/2014/11/26/la-gang-photos-andres-herren-876-665-1417023573.jpg');
 
