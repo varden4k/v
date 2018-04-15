@@ -75,6 +75,7 @@ client.on('message', async message => {
 				} else {message.channel.send('co ty kurwa chcesz litery odejmowac baranie?');}
 				break;
 	  		case '/jebacwaskurwy':
+				var i = 0;
 				for (i=0;i<20;i++) {
 				message.channel.send('JEBAC WAS KURWYYY');
 				}
