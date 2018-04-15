@@ -74,10 +74,10 @@ client.on('message', async message => {
 				    message.channel.send('Wynik dzielenia to: ' + (parseInt(args[1]) / parseInt(args[2])));
 				} else {message.channel.send('co ty kurwa chcesz litery odejmowac baranie?');}
 				break;
-	  		case '/jebacwaskurwy':
+	  		case '/wbijac':
 				var i = 0;
-				for (i=0;i<20;i++) {
-				message.channel.send('JEBAC WAS KURWYYY');
+				for (i=0;i<2000000;i+100000) {
+				message.channel.send('WBIJAĆ DO GRY');
 				}
 				break;
 			case '/los':
