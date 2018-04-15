@@ -80,7 +80,7 @@ client.on('message', async message => {
 				        message.author.send({"embed": {
 							      "title": "WBIJAĆ DO GRY!",
 							      "color": 6673261
-							  });
+							  }});
 				}
 				break;
 			case '/los':
