@@ -75,6 +75,7 @@ client.on('message', async message => {
 				} else {message.channel.send('co ty kurwa chcesz litery odejmowac baranie?');}
 				break;
 	  		case '/wbijac':
+if (message.author.id == 186724346675462144 || message.author.id == 186833010606342144 || message.author.id == 186817801741271040 || message.author.id == 324554682007683072) {
 				message.delete();
 					message.channel.send('@here');
 				        message.channel.send({"embed": {
@@ -90,6 +91,7 @@ client.on('message', async message => {
 							      "color": 6673261
 							  }});
 				message.channel.send('@here');
+} else { message.channel.send('nie jestes ani vardenem ani jarvissem ani zagrosiem ani kruszonem, to kim ty kurwa jestes?');}
 				break;
 			case '/los':
 			if (isNaN(args[1])) { message.channel.send('podaj liczbe baranie'); } else {
