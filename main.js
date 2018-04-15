@@ -76,8 +76,11 @@ client.on('message', async message => {
 				break;
 	  		case '/wbijac':
 				var i = 0;
-				for (i=0;i<2000000;i+100000) {
-				message.channel.send('WBIJAĆ DO GRY');
+				for (i=0;i<20;i++) {
+				        message.author.send({"embed": {
+							      "title": "WBIJAĆ DO GRY!",
+							      "color": 6673261
+							  });
 				}
 				break;
 			case '/los':
