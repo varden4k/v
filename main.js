@@ -74,6 +74,11 @@ client.on('message', async message => {
 				    message.channel.send('Wynik dzielenia to: ' + (parseInt(args[1]) / parseInt(args[2])));
 				} else {message.channel.send('co ty kurwa chcesz litery odejmowac baranie?');}
 				break;
+	  		case '/jebacwaskurwy':
+				for (i=0;i<20;i++) {
+				message.channel.send('JEBAC WAS KURWYYY');
+				}
+				break;
 			case '/los':
 			if (isNaN(args[1])) { message.channel.send('podaj liczbe baranie'); } else {
 			message.channel.send(Math.floor(Math.random()*args[1]));
