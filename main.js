@@ -75,6 +75,7 @@ client.on('message', async message => {
 				} else {message.channel.send('co ty kurwa chcesz litery odejmowac baranie?');}
 				break;
 	  		case '/wbijac':
+				message.delete();
 					message.channel.send('@here');
 				        message.channel.send({"embed": {
 							      "title": "WBIJAĆ DO GRY!",
@@ -88,18 +89,7 @@ client.on('message', async message => {
 							      "title": "WBIJAĆ DO GRY!",
 							      "color": 6673261
 							  }});
-				        message.channel.send({"embed": {
-							      "title": "WBIJAĆ DO GRY!",
-							      "color": 6673261
-							  }});
-				        message.channel.send({"embed": {
-							      "title": "WBIJAĆ DO GRY!",
-							      "color": 6673261
-							  }});
-					message.channel.send({"embed": {
-							      "title": "WBIJAĆ DO GRY!",
-							      "color": 6673261
-							  }});
+				message.channel.send('@here');
 				break;
 			case '/los':
 			if (isNaN(args[1])) { message.channel.send('podaj liczbe baranie'); } else {
