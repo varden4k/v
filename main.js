@@ -75,13 +75,31 @@ client.on('message', async message => {
 				} else {message.channel.send('co ty kurwa chcesz litery odejmowac baranie?');}
 				break;
 	  		case '/wbijac':
-				var i = 0;
-				for (i=0;i<20;i++) {
+					message.channel.send('@here');
 				        message.channel.send({"embed": {
 							      "title": "WBIJAĆ DO GRY!",
 							      "color": 6673261
 							  }});
-				}
+				        message.channel.send({"embed": {
+							      "title": "WBIJAĆ DO GRY!",
+							      "color": 6673261
+							  }});
+				        message.channel.send({"embed": {
+							      "title": "WBIJAĆ DO GRY!",
+							      "color": 6673261
+							  }});
+				        message.channel.send({"embed": {
+							      "title": "WBIJAĆ DO GRY!",
+							      "color": 6673261
+							  }});
+				        message.channel.send({"embed": {
+							      "title": "WBIJAĆ DO GRY!",
+							      "color": 6673261
+							  }});
+					message.channel.send({"embed": {
+							      "title": "WBIJAĆ DO GRY!",
+							      "color": 6673261
+							  }});
 				break;
 			case '/los':
 			if (isNaN(args[1])) { message.channel.send('podaj liczbe baranie'); } else {
