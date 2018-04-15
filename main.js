@@ -61,12 +61,19 @@ client.on('message', async message => {
 				break;
 			case '/odejmij':
 if (!isNaN(args[1]) && !isNaN(args[2])) {
-            message.channel.send('Wynik dodawania to: ' + (parseInt(args[1]) - parseInt(args[2])));
+            message.channel.send('Wynik odejmowania to: ' + (parseInt(args[1]) - parseInt(args[2])));
         } else {message.channel.send('co ty kurwa chcesz litery odejmowac baranie?');}}
 	break;
-			case '/dodaj':
-				accept.dodawanie(message, args, client);
-				break;
+			case '/mnoz':
+if (!isNaN(args[1]) && !isNaN(args[2])) {
+            message.channel.send('Wynik mnozenia to: ' + (parseInt(args[1]) * parseInt(args[2])));
+        } else {message.channel.send('co ty kurwa chcesz litery odejmowac baranie?');}}
+	break;			
+	  case '/dziel':
+if (!isNaN(args[1]) && !isNaN(args[2])) {
+            message.channel.send('Wynik dzielenia to: ' + (parseInt(args[1]) / parseInt(args[2])));
+        } else {message.channel.send('co ty kurwa chcesz litery odejmowac baranie?');}}
+	break;
 			case '/los':
 			if (isNaN(args[1])) { message.channel.send('podaj liczbe baranie'); } else {
 			message.channel.send(Math.floor(Math.random()*args[1]));
