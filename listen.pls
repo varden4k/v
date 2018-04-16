@@ -3,7 +3,7 @@
 
 NumberOfEntries=1
 
-File1=https://www.dropbox.com/s/nhl77y4c6ip8him/King%20Yella%20%E2%80%9CSkeeze%20Flow%E2%80%9C%20Official%20Video.mp3
+File1=http://k003.kiwi6.com/hotlink/34fmfpknju/King_Yella_Skeeze_Flow_Official_Video.mp3
 
 Title1=BEAUTIFUL instrumentals
 
