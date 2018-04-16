@@ -3,7 +3,7 @@
 
 NumberOfEntries=1
 
-File1=http://k003.kiwi6.com/hotlink/k0m0qm8sz3/Nef_The_Pharaoh_-_Big_Boss_Chang_Audio_.mp3
+File1=http://50.7.70.66:8577/
 
 Title1=BEAUTIFUL instrumentals
 
