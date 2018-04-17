@@ -3,9 +3,9 @@
 
 NumberOfEntries=1
 
-File1=http://50.7.70.66:8577/
+File1=http://gr-relay-1.gaduradio.pl/23
 
-Title1=BEAUTIFUL instrumentals
+Title1=hiphop
 
 Length1=-1
 
