@@ -3,7 +3,7 @@
 
 NumberOfEntries=1
 
-File1=http://gr-relay-1.gaduradio.pl/23
+File1=http://173.244.215.162:8170
 
 Title1=hiphop
 
