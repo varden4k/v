@@ -3,7 +3,7 @@
 
 NumberOfEntries=1
 
-File1=http://173.244.215.162:8170
+File1=http://s1.slotex.pl:8802/
 
 Title1=hiphop
 
