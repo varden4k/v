@@ -4,6 +4,59 @@ const client = new discord.Client();
 
 let accept = {};
 
+const narkoembed = {
+  "description": "**Ceny sprzedaży:**",
+  "color": 9040954,
+  "fields": [
+    {
+      "name": "Marihuana",
+      "value": "$80",
+      "inline": true
+    },
+    {
+      "name": "Haszysz",
+      "value": "$90",
+      "inline": true
+    },
+    {
+      "name": "LSD",
+      "value": "$75",
+      "inline": true
+    },
+    {
+      "name": "Meta",
+      "value": "$230",
+      "inline": true
+    },
+    {
+      "name": "Heroina",
+      "value": "$105",
+      "inline": true
+    },
+    {
+      "name": "Amfa",
+      "value": "$60",
+      "inline": true
+    },
+    {
+      "name": "Kokaina",
+      "value": "$280",
+      "inline": true
+    },
+    {
+      "name": "Crack",
+      "value": "$110",
+      "inline": true
+    },
+    {
+      "name": "Razem",
+      "value": "$1030",
+      "inline": true
+    }
+  ]
+};
+
+
     accept.acccept = (message, client) => {
 	try {
         message.member.addRole('431508241625776128');
@@ -62,5 +115,29 @@ let accept = {};
             }
         
         }
+
+        accept.narko = (message, args, client) => {
+          try {
+              if (!args[1]) {
+                message.author.send(narkoembed)
+              } else {
+                
+                if (args[1] == 1) {
+                  var word = "pakiet"
+                } else { var word = "pakietów" }
+
+                message.author.send({
+                  "title": `Cena ${args[1]} ${word} to ` + (parseInt(args[1]) * 400),
+                  "color": 9040954
+                })
+              }
+
+              } catch (e) {
+                  message.channel.send("error!");
+              } finally {
+                  message.channel.stopTyping(true);
+              }
+          
+          }
 
 module.exports = accept;
